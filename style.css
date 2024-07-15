@@ -192,6 +192,13 @@ footer{
     section {
         margin: 50px 20px;
     }
+    body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 1, 8, 0.7)),url("images/background.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    height:100vh;
+    }
 
     .content {
         width: 90%;
