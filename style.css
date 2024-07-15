@@ -244,4 +244,14 @@ footer{
         grid-template-columns: 1fr;
         margin: 300px 10px;
     }
+    .content{
+    width:60%;
+    position:absolute;
+    top:50%;
+    text-align: left;
+    transform: translateY(-50%);
+    margin:20px 30px;
+    padding:20px 30px;
+    display: block;
+    }
 }
