@@ -177,30 +177,64 @@ footer{
 /* Default styles */
 
 /* For devices up to 768px (phones) */
+/* Responsive Styles */
 @media (max-width: 768px) {
-  /* CSS rules for phones */
+    .heading {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    section {
+        margin: 50px 20px;
+    }
+
+    .content {
+        width: 90%;
+        position: static;
+        transform: none;
+        margin: 0 auto;
+    }
+
+    .content h1 {
+        font-size: 40px;
+    }
+
+    .content p {
+        font-size: 20px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 400px 20px;
+    }
+
+    .grid-item {
+        width: auto;
+        height: auto;
+    }
 }
 
-/* For devices between 768px and 1024px (tablets) */
-@media (min-width: 768px) and (max-width: 1024px) {
-  /* CSS rules for tablets */
-    text-align:center;
-    justify-content:center;
-    align-items:center;
-}
+@media (max-width: 480px) {
+    .content h1 {
+        font-size: 30px;
+    }
 
-/* For devices between 1024px and 1440px (small desktops) */
-@media (min-width: 1024px) and (max-width: 1440px) {
-  /* CSS rules for small desktops */
-     text-align:center;
-    justify-content:center;
-    align-items:center;
-}
+    .content p {
+        font-size: 18px;
+    }
 
-/* For devices above 1440px (large desktops) */
-@media (min-width: 1440px) {
-  /* CSS rules for large desktops */
-     text-align:center;
-    justify-content:center;
-    align-items:center;
+    button {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        margin: 300px 10px;
+    }
 }
